@@ -52,8 +52,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # A/B
-AB_OTA_UPDATER := true
-TW_INCLUDE_REPACKTOOLS := true
+AB_OTA_UPDATER := false
+# A/B
+ENABLE_VIRTUAL_AB := false
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
