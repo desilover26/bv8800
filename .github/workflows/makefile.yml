@@ -17,7 +17,7 @@ on:
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp
   MANIFEST_BRANCH: twrp-11
-  DEVICE: penrose
+  DEVICE: BV8800
   DT_LINK: https://github.com/desilover26/bv8800 -b main
   DT_PATH: device/wheatek/BV8800
   TARGET: bootimage
@@ -62,7 +62,7 @@ jobs:
        - name: Release recovery image
          uses: softprops/action-gh-release@v1
          env:
-          GITHUB_TOKEN: ${{ secrets.penrose }}
+          GITHUB_TOKEN: ${{ secrets.BV8800 }}
          with:
           tag_name: TWRP3.6.1_11.0
           name: TEST ALPHA
