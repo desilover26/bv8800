@@ -57,7 +57,7 @@ jobs:
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
+              . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET -j5
               cp  out/target/product/BV8800/recovery.img    out/target/product/BV8800/recovery-BV8800-twrp11-$(date +"%Y%m%d-%H%M").img
              
        - name: Release recovery image
