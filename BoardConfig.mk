@@ -99,7 +99,7 @@ PLATFORM_VERSION := 16.1.0
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
- TWRP Configuration
+#TWRP Configuration
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6781.rc
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
