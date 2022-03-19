@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_BV8800-userdebug
-add_lunch_combo omni_BV8800-eng
+add_lunch_combo twrp_BV8800-userdebug
+add_lunch_combo twrp_BV8800-eng
