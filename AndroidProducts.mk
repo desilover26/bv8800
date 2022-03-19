@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_BV8800.mk
+     $(LOCAL_DIR)/twrp_BV8800.mk
