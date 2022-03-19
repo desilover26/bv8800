@@ -17,14 +17,14 @@
 
 LOCAL_PATH := device/wheatek/BV8800
 
-# A/B
-AB_OTA_PARTITIONS += \
-    boot \
-    system \
-    vendor
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 30
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+PRODUCT_PLATFORM := mt6781
+#PLATFORM_SDK_VERSION := 30
