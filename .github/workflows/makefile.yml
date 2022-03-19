@@ -58,13 +58,15 @@ jobs:
          run: |
               cd work
               . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
+              cp  out/target/product/BV8800/recovery.img    out/target/product/BV8800/recovery-BV8800-twrp11-$(date +"%Y%m%d-%H%M").img
              
        - name: Release recovery image
          uses: softprops/action-gh-release@v1
          env:
-          GITHUB_TOKEN: ${{ secrets.BV8800 }}
+          GITHUB_TOKEN: ${{ secrets.TEST }}
          with:
-          tag_name: TWRP3.6.1_11.0
-          name: TEST ALPHA
+          tag_name: TWRP_BV8800-twrp11
+          name: twrp11
           files: | 
-            work/out/target/product/BV8800/boot.img
+            twrp/out/target/product/BV8800/recovery*.img
+            twrp/out/target/product/BV8800/ramdisk*.img
