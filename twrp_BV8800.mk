@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/wheatek/BV8800/reco
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := BV8800
-PRODUCT_NAME := omni_BV8800
+PRODUCT_NAME := twrp_BV8800
 PRODUCT_BRAND := Blackview
 PRODUCT_MODEL := Blackview
 PRODUCT_MANUFACTURER := wheatek
