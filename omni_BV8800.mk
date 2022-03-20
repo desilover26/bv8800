@@ -20,8 +20,8 @@ PRODUCT_RELEASE_NAME := BV8800
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/wheatek/BV8800/device.mk)
@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/wheatek/BV8800/reco
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := BV8800
-PRODUCT_NAME := twrp_BV8800
+PRODUCT_NAME := omni_BV8800
 PRODUCT_BRAND := Blackview
 PRODUCT_MODEL := Blackview
 PRODUCT_MANUFACTURER := wheatek
