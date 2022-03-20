@@ -15,6 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+COMMON_LUNCH_CHOICES := \
+	twrp_BV8800-eng	
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_BV8800.mk
+    $(LOCAL_DIR)/twrp_BV8800.mk
