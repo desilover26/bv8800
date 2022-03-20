@@ -18,6 +18,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), BV8800)
+ifeq ($(TARGET_DEVICE),BV8800)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
