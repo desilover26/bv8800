@@ -61,7 +61,7 @@ jobs:
          run: |
               PATH=~/bin:$PATH
               cd twrp
-              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch twrp_BV8800-eng && mka $TARGET -j5
+              export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh &&lunch omni_BV8800-eng && mka $TARGET -j5
               cp  out/target/product/BV8800/recovery.img    out/target/product/BV8800/recovery-BV8800-twrp10-$(date +"%Y%m%d-%H%M").img  
              
        - name: Release recovery image
