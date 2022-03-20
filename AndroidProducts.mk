@@ -16,6 +16,6 @@
 # limitations under the License.
 #
 COMMON_LUNCH_CHOICES := \
-	twrp_BV8800-eng	
+	omni_BV8800-eng	
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_BV8800.mk
+    $(LOCAL_DIR)/omni_BV8800.mk
